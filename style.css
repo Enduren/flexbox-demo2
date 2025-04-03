@@ -1,0 +1,57 @@
+/* style.css */
+body{
+    background-color: aqua;
+    
+}
+.menubar ul {
+    display: flex; /* Make the list items display in a row */
+    list-style: none; /* Remove default list styling (bullets) */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    background-color: #f0f0f0; /* Optional background color for the menu bar */
+  }
+  
+  .menubar li.menu { /* Target the list items with class "menu" */
+    margin-right: 20px; /* Add spacing between menu items */
+    padding: 10px 15px; /* Add padding to the menu items */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+  .menubar li.menu:hover {
+    background-color: #e0e0e0; /* Optional hover effect */
+  }
+  
+  /* Responsive design - Stack on smaller screens */
+  @media (max-width: 600px) {
+    .menubar ul {
+      flex-direction: column; /* Stack the list items vertically */
+    }
+  
+    .menubar li.menu {
+      margin-right: 0; /* Remove right margin when stacked */
+      margin-bottom: 5px; /* Add spacing between stacked items */
+    }
+  }
+  .container{
+    display: flex;
+
+    width: 240px;
+    margin: auto ;
+  }
+  /* Optional styling for the submit button */
+  .submit {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: opcity 1s ease-out;
+    /* moving button to bottom right with position */
+    
+  }
+  
+  .submit:hover {
+    opacity: 0;
+    background-color: #0056b3;
+  }
