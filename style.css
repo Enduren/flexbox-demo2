@@ -46,12 +46,12 @@ body{
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transform: opcity 1s ease-out;
+    transition: color 1s ease-out;
     /* moving button to bottom right with position */
     
   }
   
   .submit:hover {
-    opacity: 0;
+    color: red;
     background-color: #0056b3;
   }
